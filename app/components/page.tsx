@@ -154,7 +154,7 @@ export default function ComponentsPage() {
         />
 
         <section>
-          <div className="flex items-center justify-between mb-6">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
             <h2 className="text-2xl font-semibold">Components</h2>
             <div className="w-full max-w-sm">
               <Input
@@ -165,7 +165,7 @@ export default function ComponentsPage() {
             </div>
           </div>
 
-          <div className="grid gap-6 grid-cols-1">
+          <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {visible.map((c) => (
               <ComponentCard
                 key={c.id}
